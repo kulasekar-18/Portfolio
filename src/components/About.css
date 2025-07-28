@@ -1,0 +1,39 @@
+.about {
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about-content {
+    max-width: 600px;
+    /* decreased from 800px */
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    /* slightly increased */
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #00ffff;
+    font-weight: 600;
+}
+
+.about-text {
+    font-size: 1.3rem;
+    /* increased */
+    line-height: 2.1;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}

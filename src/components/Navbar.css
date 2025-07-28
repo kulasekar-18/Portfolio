@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1e1e2f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.nav-links li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-links li:hover {
+    color: #61dafb;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+
+/* Hamburger animation when open */
+
+.rotate1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.rotate2 {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.fade {
+    opacity: 0;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #1e1e2f;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 0;
+        align-items: center;
+        display: none;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
